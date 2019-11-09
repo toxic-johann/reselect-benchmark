@@ -56,6 +56,28 @@ const suite = new Benchmark.Suite();
 
 // add tests
 suite
+  .add('create selector          ', function() {
+    createSelector(
+      baseCategorySelector,
+      contentModeSelector,
+      (category, contentMode) => {
+        if (!contentMode) {
+          return category;
+        }
+        const { currentMode } = contentMode.map;
+        return currentMode ? contentMode[currentMode] : category;
+      }
+    )
+  })
+  .add('create pure selector     ', function() {
+    const pureCategorySelector = ({ category, contentMode }) => {
+      if (!contentMode) {
+        return category;
+      }
+      const { currentMode } = contentMode.map;
+      return currentMode ? contentMode[currentMode] : category;
+    };
+  })
   .add('reslect             10*10', function() {
     categorySelector(state10);
   })
