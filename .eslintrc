@@ -1,0 +1,18 @@
+{
+  "globals": {
+    "process": true
+  },
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+  },
+  "extends": [
+    "eslint-config-egg",
+  ],
+  "plugins": [
+  ],
+  "rules": {
+    "valid-jsdoc": "off"
+  }
+}

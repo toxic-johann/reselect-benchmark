@@ -1,0 +1,32 @@
+{
+  "name": "reselect-benchmark",
+  "version": "1.0.0",
+  "description": "Memorization is not silver bullet",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "lint": "eslint ./ --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toxic-johann/reselect-benchmark.git"
+  },
+  "keywords": [
+    "reselect"
+  ],
+  "author": "toxic-johann",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/toxic-johann/reselect-benchmark/issues"
+  },
+  "homepage": "https://github.com/toxic-johann/reselect-benchmark#readme",
+  "dependencies": {
+    "benchmark": "^2.1.4",
+    "faker": "^4.1.0",
+    "reselect": "^4.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-egg": "^7.5.1"
+  }
+}
