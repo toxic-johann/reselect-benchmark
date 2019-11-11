@@ -65,3 +65,4 @@ lib/esnext/*
 bundle-size/iife.html
 
 ts-out
+state.js
