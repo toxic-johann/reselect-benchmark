@@ -6,7 +6,6 @@
   "scripts": {
     "test": "node index.js",
     "lint": "eslint ./ --fix",
-    "version": "git add -A lib",
     "postversion": "git push --no-verify && git push --tags --no-verify"
   },
   "repository": {
